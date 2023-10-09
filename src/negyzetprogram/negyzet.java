@@ -40,6 +40,29 @@ public class negyzet {
     public String toString() {
         return "Negyzet{" + ", Oldal=" + oldal + ", Területe=" + terulet() + ", X=" + k.getX() + ", Y=" + k.getY() + '}';
     }
-    
 
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 47 * hash + this.oldal;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final negyzet other = (negyzet) obj;
+        return this.oldal == other.oldal;
+    }
+    
+    
+    
 }
