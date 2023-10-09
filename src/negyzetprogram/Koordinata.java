@@ -4,6 +4,11 @@ package negyzetprogram;
 public class Koordinata {
     private double x,y;
 
+    public Koordinata(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public double getX() {
         return x;
     }

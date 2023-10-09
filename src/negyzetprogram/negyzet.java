@@ -3,11 +3,20 @@ package negyzetprogram;
 public class negyzet {
 
     private int oldal;
+    private Koordinata k;
+    
+    public negyzet(int oldal, Koordinata k) {
+        if (oldal <= 0) {
+            oldal = 1;
+        }
+        this.oldal = oldal;
+        this.k = k;
+    }
 
     public int getOldalhossz() {
         return oldal;
     }
-
+    
     public void setOldal(int oldal) {
         if (oldal <= 0) {
             oldal = 1;
@@ -25,7 +34,7 @@ public class negyzet {
 
     @Override
     public String toString() {
-        return "negyzet{" +  "oldal=" + oldal + ", területe=" + terulet() + '}';
+        return "Negyzet{" + ", Oldal=" + oldal + ", Területe=" + terulet() + ", X=" + k.getX() + ", Y=" + k.getY() + '}';
     }
     
 
