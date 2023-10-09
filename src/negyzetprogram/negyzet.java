@@ -1,33 +1,17 @@
-
 package negyzetprogram;
 
 public class negyzet {
+
     private int oldal;
-    private double x;
-    private double y;
-    
-    
-    public int getOldalhossz(){
+
+    public int getOldalhossz() {
         return oldal;
     }
 
-    public double getX() {
-        return x;
-    }
-
-    public double getY() {
-        return y;
-    }
-
-    public void setX(double x) {
-        this.x = x;
-    }
-
-    public void setY(double y) {
-        this.y = y;
-    }
-
     public void setOldal(int oldal) {
+        if (oldal <= 0) {
+            oldal = 1;
+        }
         this.oldal = oldal;
     }
 
@@ -41,7 +25,8 @@ public class negyzet {
 
     @Override
     public String toString() {
-        return "negyzet{" + "x=" + x + ", y=" + y + ", oldal=" + oldal + ", területe=" + terulet() + '}';
+        return "negyzet{" +  "oldal=" + oldal + ", területe=" + terulet() + '}';
     }
     
+
 }

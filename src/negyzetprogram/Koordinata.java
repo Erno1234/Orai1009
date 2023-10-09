@@ -2,8 +2,7 @@
 package negyzetprogram;
 
 public class Koordinata {
-    private double x;
-    private double y;
+    private double x,y;
 
     public double getX() {
         return x;
