@@ -11,7 +11,6 @@ public class negyzet {
         return oldal;
     }
 
-
     public double getX() {
         return x;
     }
