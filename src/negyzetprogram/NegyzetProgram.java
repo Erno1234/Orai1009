@@ -12,10 +12,11 @@ public class NegyzetProgram {
     
     private void feladat(){
         negyzet n = new negyzet();
+        Koordinata koor = new Koordinata();
         n.setOldal(2);
-        n.setX(20);
-        n.setY(30);
+        koor.setX(20);
+        koor.setY(30);
         
-        System.out.println(n.toString());
+        System.out.println(n.toString()+ koor.toString());
     }
 }
