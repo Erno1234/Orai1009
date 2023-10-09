@@ -2,10 +2,20 @@
 package negyzetprogram;
 
 public class NegyzetProgram {
-    private static negyzet n1 = new negyzet();
-    
+
+
+       
     public static void main(String[] args) {
-        System.out.println("Négyzet oldal hossza: "+ n1.getOldalhossz() +" X koordináta: " +n1.getX() +" Y koordináta: " +n1.getY());
+        new NegyzetProgram().feladat();
+
     }
     
+    private void feladat(){
+        negyzet n = new negyzet();
+        n.setOldal(2);
+        n.setX(20);
+        n.setY(30);
+        
+        System.out.println(n.toString());
+    }
 }
