@@ -31,6 +31,10 @@ public class negyzet {
     public double terulet() {
         return oldal * oldal;
     }
+    
+    public boolean Vizsgal(negyzet masik) {
+        return oldal == masik.oldal;
+    }
 
     @Override
     public String toString() {
